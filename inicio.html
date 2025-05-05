@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electro Tec - Inicio</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="icon" href="imagenes/Logo/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="inicio.html">
+        <img src="imagenes/Logo/logo.png" alt="Electro Tec" />
+      </a>
+    </div>
+
+    <div class="contenedor-header">
+      <form class="barra-busqueda">
+        <input type="text" placeholder="Buscar drones..." />
+        <button type="submit">🔍</button>
+      </form>
+
+      <nav>
+        <ul>
+          <li><a href="https://electrotech.wuaze.com/inicio">Inicio</a></li>
+          <li><a href="https://electrotech.wuaze.com/catalogo">Catálogo</a></li>
+          <li><a href="https://electrotech.wuaze.com/nosotros">Nosotros</a></li>
+          <li><a href="https://electrotech.wuaze.com/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bienvenida">
+    <h1>Bienvenido a <span>Electro Tec</span></h1>
+    <p>En Electro Tec nos apasiona la tecnología aérea. Explora drones de última generación con cámaras HD, GPS inteligente y sistemas de estabilidad avanzada.</p>
+    <ul>
+      <li>Drones con cámara profesional</li>
+      <li>Navegación inteligente</li>
+      <li>Batería de larga duración</li>
+    </ul>
+  </section>
+
+  <div class="carrusel">
+    <div class="carrusel-imagenes">
+      <img src="imagenes/Carrusel/Dron.webp" alt="Drone modelo 1" class="activo" />
+      <img src="imagenes/Carrusel/Camara.webp" alt="Drone modelo 2" />
+      <img src="imagenes/Carrusel/Monitor.webp" alt="Drone modelo 3" />
+    </div>
+    <button class="carrusel-btn anterior">&#10094;</button>
+    <button class="carrusel-btn siguiente">&#10095;</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Electro Tec. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

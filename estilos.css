@@ -1,0 +1,238 @@
+/* Fuente base */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #fffffff1;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Contenedor header reorganizado para alinear a la izquierda */
+.contenedor-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+  display: flex;
+  width: auto; /* Ajusta el ancho al contenido */
+  max-width: 400px; /* Mantenemos el máximo ancho */
+}
+
+.barra-busqueda input {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.barra-busqueda button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navegación */
+nav {
+  margin-left: auto; /* Empuja la navegación hacia la derecha */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Bienvenida / Formulario de contacto */
+.bienvenida {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.bienvenida h1 {
+  font-size: 2rem;
+  color: #0059b3;
+  margin-bottom: 1rem;
+}
+
+.bienvenida p {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo del formulario */
+#form-contacto label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+#form-contacto input,
+#form-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+#form-contacto button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#form-contacto button:hover {
+  background-color: #005bb5;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.carrusel-imagenes {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrusel-imagenes img {
+  min-width: 100%;
+  display: none;
+}
+
+.carrusel-imagenes img.activo {
+  display: block;
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.carrusel-btn.anterior {
+  left: 10px;
+}
+
+.carrusel-btn.siguiente {
+  right: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffffe3;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor-header {
+    align-items: center;
+    flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+  }
+
+  .barra-busqueda {
+    max-width: 100%;
+    order: 1; 
+    margin-left: 0; 
+    margin-bottom: 0.5rem; 
+  }
+
+  nav {
+    order: 2; 
+    margin-left: 0; 
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .bienvenida {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+.buscador-container {
+position: static;
+width: 100%;
+margin-bottom: 10px;
+top: 50%;
+left: auto;
+transform: translateY(0);
+z-index: 10;
+}

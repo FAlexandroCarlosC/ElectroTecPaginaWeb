@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Electro Tec</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="imagenes/Logo/logo.png" type="image/webp">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="inicio.html">
+        <img src="imagenes/Logo/logo.png" alt="Electro Tec" />
+      </a>
+    </div>
+
+    <div class="contenedor-header">
+      <form class="barra-busqueda">
+        <input type="text" placeholder="Buscar drones..." />
+        <button type="submit">🔍</button>
+      </form>
+
+      <nav>
+        <ul>
+          <li><a href="https://electrotech.wuaze.com/inicio">Inicio</a></li>
+          <li><a href="https://electrotech.wuaze.com/catalogo">Catálogo</a></li>
+          <li><a href="https://electrotech.wuaze.com/nosotros">Nosotros</a></li>
+          <li><a href="https://electrotech.wuaze.com/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="formulario-contacto">
+    <section class="bienvenida">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes dudas o sugerencias? Envíanos un mensaje y con gusto te responderemos lo antes posible.</p>
+      <form id="form-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="mensaje-error" class="error"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Electro Tec. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
